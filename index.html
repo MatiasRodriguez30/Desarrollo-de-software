@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML de desarrollo</title>
+    <style>
+        .secciones{
+            text-align: left;
+        }
+        header,footer{
+            background-color: grey;
+            color: white;
+            text-align: center;
+            padding: 20px;
+
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+            text-align: center;
+        }
+        tfoot{
+            font-weight: bold;
+            background-color: gray;
+        }
+    </style>
+</head>
+    <body>
+        <header>
+            <h1>Encabezado Principal</h1>
+            <ul class="secciones">
+                <li><a href="#estructura">Ir a estructura</a></li>
+                <li><a href="#multimedia">Ir a multimedia</a></li>
+                <li><a href="#formulario">Ir a formulario</a></li>
+            </ul>
+        </header>
+        <h1><section id="estructura">1. Estructura Básica del DocumentoHTML</section></h1>
+        <h4>Este documento HTML tiene una estructura básica que incluye la declaración de DOCTYPE, etiquetas de metadatos y un titulo</h4>
+        <h1>2.Encabezados y propiedades del texto</h1>
+        <h1>Este es un texto</h1>
+        <h2><b>Este es un texto</b></h2>
+        <h3><strong>Este es un texto</strong></h3>
+        <h4><em>Este es un texto</em></h4>
+        <h5><mark>Este es un texto</mark></h5>
+        <h6><span>Este es un texto</span></h6>
+        <h1>3.Divisiones y Agrupación de Contenido</h1>
+        <div>
+            <h3>Seccion 1</h3>
+            <p>Contenido de la primera seccion agrupada en un div</p>
+        </div>
+        <div>
+            <h3>Seccion 2</h3>
+            <p>Contenido de la segunda seccion agrupada en un div</p>
+        </div>
+        <h1>4.Enlaces y Listas</h1>
+        <div>
+            <p>Visita nuestro <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Sitio web</a> para mas información.</p>
+            <!--ol es para listas ordenadas numericamente-->
+            <ul>
+                <li><a href="#estructura">Ir a estructura</a></li>
+                <li><a href="#multimedia">Ir a multimedia</a></li>
+                <li><a href="#formulario">Ir a formulario</a></li>
+            </ul>
+            <!--ul es para listas desordenadas-->
+            <ul>
+               <li>Primer item de una lista desordenada</li>
+               <li>Segundo itm de una lista desordenada</li> 
+            </ul>
+            <ol>
+                <li>Primer item de una lista ordenada</li>
+                <li>Segundo item de una lista ordenada</li>
+            </ol>
+        </div>
+        <h1><section id="multimedia">5.Elementos Multimedia</section></h1>
+        <div>
+            <img src="https://www.clarin.com/img/2022/12/20/slvlYuUg6_2000x1500__1.jpg" alt="Messi levantando la copa del mundo" width="400px">
+        </div>
+        <div>
+                <video
+                src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4 "
+                controls width="400px" height="400px" />
+        </div>
+        <div>
+                <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg" controls/>
+        </div>
+        </div>
+        <h1>6.Tablas</h1>
+        <div>
+            <table>
+                <thead>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 3</td>
+                    </tr>
+                    <tr>
+                        <td>Dato 2</td>
+                        <td>Dato 4</td>
+                    </tr>
+        
+                </tbody>
+                <tfoot>
+                    <td>Resultado 1</td>
+                    <td>Resultado 2</td>
+                </tfoot>
+            </table>
+        </div>
+        <h1><section id="formulario">7.Formularios</section></h1>
+        <div>
+            <form action="">
+                <label for="">Nombre</label>
+                <input type="text" placeholder="Nombre">
+                <label>Email</label>
+                <input type="email" placeholder="Example@example.org">
+
+                <div>
+                <label>Mensaje</label>
+                <input type="text" placeholder="Ingresa tu mensaje aqui">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </body>
+    <footer>
+        <p>2024 Trabajo Práctico de HTML</p>
+    </footer>
+</html>
